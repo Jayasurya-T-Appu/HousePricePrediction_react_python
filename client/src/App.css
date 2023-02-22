@@ -1,0 +1,15 @@
+.text {
+  text-align: center;
+  color: white;
+}
+.App{
+  height: 100vh;
+  background-image: url('./Sprinkle.svg');
+}
+label{
+  color: white;
+}
+
+.result{
+  color: green;
+}
