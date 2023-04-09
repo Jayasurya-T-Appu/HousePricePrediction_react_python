@@ -61,7 +61,8 @@ function App() {
 
     axios.post('http://127.0.0.1:5000/predict_price', data)
       .then((res) => {
-        setEst_val(res.data.estimates_price)
+        setEst_val(res.data.estimates_price * sqft)
+
       })
       .catch((err) => {
         console.log(err);
@@ -129,7 +130,7 @@ function App() {
             </form>
 
             <div className='form-group mt-4'>
-              <h4 className='text'>Estimated Price per sqft is : <span className='result'>{est_val }</span>/- </h4>
+              <h4 className='text'>Estimated Price : <span className='result'>{est_val}</span>/- </h4>
 
             </div>
           </div>
